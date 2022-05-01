@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Petits plats japonais</title>
+    <link rel="icon" type="image/png" href="icône-de-fleur-sakura-v2.jpg" />
+    <link rel="stylesheet" type="text/css" href="fichier_css.css" />
+</head>
+<script src="liste_ingredients.js"></script>
+
+<body>
+    <!-- en-tête de page -->
+    <div id="tête">
+        <h1> Petits plats japonais </h1>
+    </div>
+    <!-- fin en-tête de page -->
+
+    <!-- sommaire de page -->
+    <div id="sommaire">
+        <h2> Liste des petits plats :</h2>
+        <ul>
+            <li> <a href="#section-Soba">Soba</a> </li>
+            <li> <a href="#section-Okonomiyaki">Okonomiyaki</a> </li>
+        </ul>
+    </div>
+    <!-- fin sommaire de page -->
+
+    <!-- corps de page -->
+    <div id="corps">
+
+        <!-- section soba -->
+        <div id="partie-soba">
+            <h3 id="section-Soba">Soba</h3>
+
+            <!-- présentation du soba -->
+            <div id="image-soba">
+                <img alt="toshikoshi_soba" src="toshikoshi_soba.jpg" width="220" />
+                <div id="legende-image-soba">Toshikoshi soba</div>
+            </div>
+            <div id="texte-soba">
+                <p>Les soba sont un mets japonais constitué de pâtes de sarrasin. Avec les udon et les rāmen, elles sont
+                    les pâtes les plus consommées au Japon.
+                    Les pâtes à base de farine de sarrasin ne sont apparues qu'à l'ère Edo, entre la fin du 16e siècle
+                    et le début du 17e siècle.
+                    La fabrication des soba (sobakiri) s'est développée jusqu'à l'apparition, à l'ère moderne, des
+                    instant soba (préparations lyophilisées de soba).</p>
+                <p>Au Japon, lorsqu'on emménage dans son nouveau lieu de résidence, il est de coutume d'offrir à ses
+                    voisins des hikkoshi soba. Et, pour le réveillon du nouvel an,
+                    il est de tradition de savourer des toshikoshi soba, de longues nouilles censées assurer, selon une
+                    croyance populaire, une longue vie
+                    aux personnes qui les consomment.</p>
+            </div>
+            <!-- fin présentation du soba -->
+
+            <!-- liste ingrédient nécessaire pour un soba -->
+            <div id="liste-ingredients-soba">
+                <h4>Liste des ingrédients </h4>
+
+                <form class="choix-nbr-personne">
+                    <label for="nombre-personne-soba"> Nombre de personnes :</label>
+                    <select id="nbr-soba" name="nbr-soba">
+                        <option value="4"> 4 personnes</option>
+                        <option value="8"> 8 personnes</option>
+                        <option value="12"> 12 personnes</option>
+                    </select>
+                    <input onclick="ingredientSoba()" type="button" value="Choisir">
+                </form>
+
+                <div id="detail-liste-ingredients-soba">
+                    <div> – <span id="soba-gramme-soba"></span>g de soba</div>
+                    <div> – <span id="soba-nbr-poireau"></span> poireau</div>
+                    <div> – <span id="soba-nbr-mache"></span> paquet de mâche</div>
+                    <div> – <span id="soba-piment"></span> cuillière à café de poudre de piment japonais
+                        shichimi tôga rashi</div>
+                    <div> – <span id="soba-eau"></span>l d'eau</div>
+                    <div> – <span id="soba-kombu"></span>g de kombu (algues séchées)</div>
+                    <div> – <span id="soba-mirin"></span>dl de mirin (saké sucré)</div>
+                    <div> – <span id="soba-katsuo"></span>g de katsuo-bushi (bonite séchée fine)</div>
+                    <div> – <span id="soba-sauce"></span>dl de sauce de soja</div>
+                </div>
+            </div>
+            <!-- fin liste ingrédient nécessaire pour un soba -->
+        </div>
+        <!-- fin section soba -->
+
+        <!-- section okonomiyaki -->
+        <div id="partie-okonomiyaki">
+            <h3 id="section-Okonomiyaki">Okonomiyaki</h3>
+
+            <!-- présentation du okonomiyaki -->
+            <div id="image-okonomiyaki">
+                <img alt="okonomiyaki" src="okonomiyaki.PNG" width="220" />
+                <div id="legende-image-okonomiyaki"> Okonomiyaki</div>
+            </div>
+            <div id="texte-okonomiyaki">
+                <p>Une okonomiyaki est une crêpe japonaise salée très populaire au Japon et notamment à Osaka qui se
+                    déguste en plat principal et qui est généralement partagée à plusieurs. C’est un plat assez copieux,
+                    complet et gourmand. Libre à vous de la personnaliser en choisissant votre garniture (viandes,
+                    poissons, légumes). Sa réalisation est assez simple et rapide.</p>
+                <p>En japonais, okonomiyaki signifie “Grillé comme vous le souhaitez”, Les recette varient beaucoup de
+                    famille en famille et vous pouvez adapter la recette comme vous le souhaitez, vous n’offenserez
+                    personne. Si vous ne pouvez pas manger de porc, allergiques aux fruits de mer, pas de soucis, mettez
+                    vos ingrédients favoris à la place !
+
+                    Il existe une autre version très populaire de l’okonomiyaki, la version d’Hiroshima qui contient des
+                    nouilles et un œuf au plat.</p>
+            </div>
+            <!-- fin présentation du okonomiyaki -->
+
+
+            <!-- liste ingrédient nécessaire pour un okonomiyaki -->
+            <div id="liste-ingredients-okonomiyaki">
+                <h4>Liste des ingrédients </h4>
+
+                <form class="choix-nbr-personne">
+                    <label for="nombre-personne-okonomiyaki"> Nombre de personnes :</label>
+                    <select id="nbr-okonomiyaki" name="nbr-okonomiyaki">
+                        <option value="1"> 1 personne</option>
+                        <option value="2"> 2 personnes</option>
+                        <option value="4"> 4 personnes</option>
+                    </select>
+                    <input onclick="ingredientOkonomiyaki()" type="button" value="Choisir">
+                </form>
+
+                <div id="detail-liste-ingredients-okonomiyaki">
+                    <div> – <span id="okonomiyaki-farine"></span>g de farine de blé</div>
+                    <div> – <span id="okonomiyaki-oeufs"></span> oeufs</div>
+                    <div> – <span id="okonomiyaki-dashi"></span>cl de dashi (ou de bouillon de poisson)</div>
+                    <div> – <span id="okonomiyaki-chou_blanc"></span> feuilles de chou blanc</div>
+                    <div> – <span id="okonomiyaki-carotte"></span> carotte</div>
+                    <div> – <span id="okonomiyaki-poulet"></span> escalope de poulet</div>
+                    <div> – <span id="okonomiyaki-ciboule"></span> tiges de ciboule</div>
+                    <div> – <span id="okonomiyaki-piment"></span> petit piment rouge doux</div>
+                    <div> – <span id="okonomiyaki-echalotte"></span> échalotte</div>
+                    <div> – <span id="okonomiyaki-huile"></span> cuillière à café d'huile neutre </div>
+                </div>
+            </div>
+            <!-- fin liste ingrédient nécessaire pour un okonomiyaki -->
+
+        </div>
+        <!-- fin section okonomiyaki -->
+
+    </div>
+    <!-- fin corps de page -->
+
+    <div id="pied-de-page">
+        <center>2022 - Roxane VELLEN MIN1</center>
+    </div>
+</body>
+
+</html>
